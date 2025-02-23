@@ -1,0 +1,324 @@
+body {
+     margin: 0;
+     padding: 0;
+     font-family: Arial, sans-serif;
+     display: flex;
+     height: 100vh;
+     width: 100vw;
+     overflow: hidden; /* Evita barras de rolagem */
+ }
+
+ .left-half,
+ .right-half {
+     flex: 1;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+     height: 100vh; 
+     padding: 20px; /* Adiciona um espaçamento nas bordas */
+
+     box-shadow: 0 0 10px rgba(0, 0, 0, 9.9); 
+ }
+
+ .left-half {
+    position: relative; /* Garante que o ::before fique sobre a imagem */
+    flex: 1;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.left-half::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(65, 33, 0, 0.6); /* Marrom escuro com 60% de transparência */
+    z-index: 1; /* Faz com que fique sobre a imagem */
+}
+
+.gif-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; /* Mantém a imagem atrás da transparência */
+}
+
+
+ .right-half {
+     background: #E5E5E5 !important; /* Força a cor de fundo */
+     color: #2e8b57; /* Cor do texto ajustada */
+     width: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     height: 100vh; 
+
+ }
+
+ .container-index {
+     max-width: 600px;
+     padding: 20px;
+ }
+
+ .header-index {
+     margin-bottom: 50px;
+ }
+
+ .header-index h1 {
+   
+    color: #333;
+     font-size: 3em;
+     margin: 0;
+ }
+
+ .header-index p {
+     font-size: 1.2em;
+ }
+
+ .button-index-group-index {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+ }
+
+ .button-index {
+     background: #4caf50;
+     color: white;
+     border: none;
+     padding: 15px 30px;
+     border-radius: 5px;
+     cursor: pointer;
+     font-size: 1.2em;
+     text-decoration: none;
+     display: inline-block;
+     transition: background 0.3s, transform 0.3s;
+ }
+
+ .button-index:hover {
+     background: #45a049;
+     transform: translateY(-5px);
+ }
+ /* Estilos gerais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+.left-half {
+    flex: 1;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.left-half img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right-half {
+    flex: 1;
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-index {
+    text-align: center;
+}
+
+.header-index h1 {
+    font-size: 2em;
+    color: #2e8b57;
+}
+.back-button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.back-button:hover {
+    background-color: #ddd;
+}
+
+.header-index p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.button-index-group-index {
+    margin-top: 20px;
+}
+
+.button-index {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+.button-index:hover {
+    background-color: #45a049;
+}
+/* Ajustando o formulário para 2 colunas */
+.form-container1 {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Limita a largura do formulário */
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Cria duas colunas de tamanhos iguais */
+    gap: 15px; /* Espaçamento entre as colunas */
+    box-sizing: border-box;
+}
+
+.form-container1 h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    grid-column: span 2; /* Faz o título ocupar as duas colunas */
+}
+
+
+/* Ajustando a estrutura dos campos */
+.form-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; /* Espaçamento entre os campos */
+}
+.form-container1 a {
+    color: green;
+    text-decoration: none;
+    display: block; /* Faz o link ocupar todo o botão */
+    width: 100%;
+    height: 100%;
+}
+.formContainer a {
+    color: green;
+    text-decoration: none;
+    display: block; /* Faz o link ocupar todo o botão */
+    width: 100%;
+    height: 100%;
+}
+.form-container a {
+    color: green;
+    text-decoration: none;
+    display: block; /* Faz o link ocupar todo o botão */
+    width: 100%;
+    height: 100%;
+}
+/* Ajuste nos labels */
+.form-container1 label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Campos de input ajustados */
+.form-container1 input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid ;
+    border-radius: 5px;
+    background: #fff;
+    color: #333;
+    font-size: 0.9em;
+}
+
+/* Ajustando o botão para ficar em uma linha única */
+.form-container1 button {
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    grid-column: span 2; /* O botão ocupará as duas colunas */
+}
+
+/* Estilo ao passar o mouse sobre o botão */
+.form-container1 button:hover {
+    background: #45a049;
+}
+
+.form-container {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    height: auto;
+    width: 100%;
+    margin: 20px;
+}
+
+.form-container h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+.form-container input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+    color: #333;
+}
+
+.form-container button {
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+    background: #45a049;
+}

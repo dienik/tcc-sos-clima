@@ -1,0 +1,110 @@
+.body-home {
+     margin: 0;
+     padding: 0;
+     font-family: Arial, sans-serif;
+     background: linear-gradient(to bottom, #2e8b57, #006400);
+     color: #fff;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     text-align: center;
+ }
+
+ .container-home {
+     max-width: 1200px;
+     padding: 20px;
+ }
+
+ .header-home {
+     margin-bottom: 50px;
+ }
+
+ .header-home h1 {
+     font-size: 3em;
+     margin: 0;
+ }
+
+ .header-home p {
+     font-size: 1.2em;
+ }
+
+ .cards-home {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 20px;
+ }
+ .card {
+     background: rgba(255, 255, 255, 0.1);
+     border-radius: 10px;
+     padding: 20px;
+     width: 250px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     transition: transform 0.3s, box-shadow 0.3s;
+ }
+
+ .card:hover {
+     transform: translateY(-10px);
+     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+ }
+
+ .card h2 {
+     font-size: 1.5em;
+     margin-bottom: 10px;
+ }
+
+ .card p {
+     font-size: 1em;
+     margin-bottom: 20px;
+ }
+
+ .card button {
+     background: #4caf50;
+     color: white;
+     border: none;
+     padding: 10px 20px;
+     border-radius: 5px;
+     cursor: pointer;
+     font-size: 1em;
+ }
+
+ .card button:hover {
+     background: #45a049;
+ }
+ .logout-button, .admin-button{
+     position: absolute;
+     top: 10px;
+     display: flex;
+     align-items: center;
+ }
+
+ .admin-button {
+     right: 80px;
+ }
+
+ .logout-button {
+     right: 10px;
+ }
+
+ .admin-button a, .logout-button a {
+     color: #fff;
+     text-decoration: none;
+     display: flex;
+     align-items: center;
+     margin-right: 10px;
+ }
+
+ .admin-button i, .logout-button i {
+     margin-right: 8px;
+ }
+ .navbar-custom {
+    background-color: white;
+}
+.navbar-custom .nav-link {
+    color: black;
+}
+.logout-btn {
+    position: absolute;
+    right: 20px;
+}

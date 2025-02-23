@@ -1,0 +1,72 @@
+/* Estilos gerais */
+.body-login {
+     margin: 0;
+     padding: 0;
+     font-family: Arial, sans-serif;
+     background: #E5E5E5 !important; /* Força a cor de fundo */
+     color: #006400; /* Cor do texto ajustada */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     text-align: center;
+ }
+ 
+ .container-login {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100%;
+     width: 100%;
+ }
+ 
+ .form-container-login {
+     background: #fff; /* Fundo branco para o formulário */
+     border-radius: 10px;
+     padding: 30px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+     max-width: 400px;
+     width: 100%;
+ }
+ 
+ .form-container-login h1 {
+     margin-bottom: 20px;
+     font-size: 2em;
+     color: #333; /* Cor do título ajustada */
+ }
+ 
+ .form-container-login label {
+     display: block;
+     margin-bottom: 10px;
+     font-size: 1em;
+     color: #555; /* Cor do texto do label ajustada */
+ }
+ 
+ .form-container-login input[type="email"],
+ .form-container-login input[type="password"] {
+     width: calc(100% - 22px);
+     padding: 10px;
+     margin-bottom: 20px;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     background: #fff;
+     color: #333; /* Cor do texto dos inputs ajustada */
+ }
+ 
+ .form-container-login button {
+     background: #4caf50;
+     color: white;
+     border: none;
+     padding: 15px 30px;
+     border-radius: 5px;
+     cursor: pointer;
+     font-size: 1.2em;
+     text-decoration: none;
+     transition: background 0.3s, transform 0.3s;
+     display: inline-block;
+ }
+ 
+ .form-container-login button:hover {
+     background: #45a049;
+     transform: translateY(-5px);
+ }
